@@ -17,29 +17,11 @@ class Worker {
 */
 
 // Answer
-class Worker {
-  constructor() {
-  
-  }
-  
-  basicSalary() {
-    return this.hoursWorked * this.rate;
-  }
-  
-  overviewSalary() {
-    return this.basicSalary() + this.TAX;
-  }
-}
-
-/*
-
-  Implementasi pada kodenya di bawah ini
-
   class Worker {
-    constructor(hoursWorked, rate, TAX) {
+    constructor(hoursWorked, rate) {
       this.hoursWorked = hoursWorked;
       this.rate = rate;
-      this.TAX = TAX;
+      this.TAX = 0.2;
     }
     
     basicSalary() {
@@ -51,8 +33,6 @@ class Worker {
     }
   }
 
-  let person = new Worker(5, 5, 5);
+  let person = new Worker(10, 50);
   console.log(person.basicSalary());
   console.log(person.overviewSalary());
-
-*/
